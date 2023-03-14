@@ -2,46 +2,31 @@
 #значення менше 100, то new_value дорівнює половині значення, у протилежному випадку - протиположне
 #значенню число
 
-value = 978
-if (value < 100):
-    new_value = value / 2
-else:
-    new_value = - value
+value = 976
+new_value = value / 2 if value < 100 else - value
 print(new_value)
 
 #2) У вас є змінна величина, тип - int. Написати тернарний оператор для змінної new_value за таким правилом: якщо
 # значення менше 100, то new_value дорівнює 1, у протилежному випадку - 0
 value = 567
-if (value < 100):
-    new_value = 1
-else:
-    new_value = 0
+new_value = 1 if value < 100 else 0
 print(new_value)
 #3) У вас є змінна величина, тип - int. Напишіть тернарний оператор для змінного new_value за таким правилом: якщо
 # значення менше 100, то new_value дорівнює True, у протилежному випадку - False
 
 value = 98
-if (value < 100):
-    new_value = True
-else:
-    new_value = False
+new_value = True if value < 100 else False
 print(new_value)
 #4) У вас є змінна my_str, тип - str. Якщо її довше менше 5, то допишіть в кінці строки її ж.
 # Приклад: було - "qwer", стало - "qwerqwer". Якщо довжина не менше 5, то залишити строку як є.
 
 my_str = 'yyjo'
-if len(my_str) < 5:
-    new_str = 2 * my_str
-else:
-    new_str = my_str
+new_str = 2 * my_str if len(my_str) < 5 else my_str
 print(new_str)
 #У вас є змінна my_str, тип - str. Якщо її довжина менше 5, то допишіть в кінці рядка перевернуту її ж.
 # Приклад: було - "qwer", стало - "qwerrewq". Якщо довжина не менше 5, то залишити строку як є.
 my_str = 'ukgi'
-if len(my_str) < 5:
-    new_str = my_str[::-1]
-else:
-    new_str = my_str
+new_str = my_str[::-1] if len(my_str) < 5 else my_str
 print(new_str)
 
 #Допрацювати завдання з калькулятором, щоб в кінці вичислення у користувача запитало, чи потрібен  калькулятор ще.
