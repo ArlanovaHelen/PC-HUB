@@ -1,0 +1,4 @@
+cat.net
+dog.net
+racoon.net
+rabbit.net
